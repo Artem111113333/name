@@ -88,7 +88,7 @@ main {
   height: 60px;
 }
 .left__burger-cat_red{
-  currentColor:var(--cat-two);
+  color:var(--cat-two);
 }
 .left__cat {
   background: var(--header-shadow);
