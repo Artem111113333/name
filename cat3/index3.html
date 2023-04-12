@@ -34,19 +34,37 @@
       </header>
       <main class="main">
         <form>
-          <div class="form__row">
-            <input class="input" type="text" />
-            <label class="form__name"> Name </label>
+          <div class="form-item">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+            <label class="form-name" for="name"> Name </label>
           </div>
-          <div class="form__row form-two">
-            <select class="input select" value="">
-                <option>Species</option>
+          <div class="form-item form-two">
+            <select
+              class="input select"
+              value=""
+              name="select"
+              id="select"
+              palcholder=" "
+            >
+              <option>Species</option>
             </select>
-            <label class="form__name">Species</label>
+            <label class="form-name" for="select">Species</label>
           </div>
-          <div class="form__row form-three">
-            <input class="input" type="date">
-            <label class="form__name">Birthday</label>
+          <div class="form-three">
+            <input
+              class="input-three"
+              type="date"
+              name="date"
+              id="date"
+              placeholder=" "
+            />
+            <label class="name-three" for="date">Birthday</label>
           </div>
         </form>
       </main>
