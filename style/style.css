@@ -21,22 +21,34 @@ body {
   max-width: 768px;
   margin: 0 auto;
 }
-.header{
+.header {
   position: sticky;
   top: 0;
-}
-.header__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px 12px 14px 12px;
   background-color: var(--header-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-height: 56px;
 }
-.block__left {
+.header__left {
   display: flex;
   align-items: center;
   column-gap: 12px;
+}
+.header__burger {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.header__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--text-name);
 }
 .block__left-more {
   cursor: pointer;
@@ -50,12 +62,13 @@ main {
   display: flex;
   justify-content: space-between;
   background: var(--main-color-block);
+  padding: 12px;
 
   border: 1px solid var(--header-color);
   box-shadow: 0px 4px 4px var(--header-shadow);
   border-radius: 12px;
 }
-.section-first{
+.section-first {
   margin-top: 12px;
 }
 .section:hover {
@@ -68,7 +81,14 @@ main {
   display: flex;
   justify-content: space-between;
   column-gap: 24px;
-  padding: 24px;
+  padding: 12px;
+}
+.burger-cat{
+  width: 60px;
+  height: 60px;
+}
+.left__burger-cat_red{
+  currentColor:var(--cat-two);
 }
 .left__cat {
   background: var(--header-shadow);
@@ -76,12 +96,12 @@ main {
   border: 1px solid var(--header-color);
   border-radius: 24px;
 }
-.about__block {
+.card__block {
   display: flex;
   align-content: center;
   column-gap: 6px;
 }
-.about__weight {
+.card__weight {
   margin-top: 4px;
   font-size: 16px;
   line-height: 24px;
