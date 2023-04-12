@@ -44,6 +44,7 @@ body {
 main {
   padding: 12px;
 }
+/* псевдокласс для марджина */
 .section {
   margin-top: 16px;
   display: flex;
@@ -58,7 +59,7 @@ main {
   margin-top: 12px;
 }
 .section:hover {
-  background-image: url(/img/icon.webp);
+  background-image: url(../img/icon.webp);
   background-position: 98% 10%;
   background-repeat: no-repeat;
   background-size: 16.5px 17.25px;

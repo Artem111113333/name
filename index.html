@@ -15,11 +15,8 @@
     <title>Cats</title>
   </head>
   <body>
-    <div class="content">
-      <header class="header">
-        <div class="header__block block">
-          <div class="block__left">
-            <svg
+    <div style="display: none">
+      <svg id="burger-icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -44,6 +41,13 @@
                 d="M19.75 17C19.75 16.5858 19.4142 16.25 19 16.25H5C4.58579 16.25 4.25 16.5858 4.25 17C4.25 17.4142 4.58579 17.75 5 17.75H19C19.4142 17.75 19.75 17.4142 19.75 17Z"
                 fill="#332317"
               />
+            </svg>
+    </div>
+    <div class="content">
+      <header class="header">
+        <div class="header__block block">
+          <div class="block__left">
+            <svg><use href="#burger-icon"></use>
             </svg>
             <span>Weight Monitor</span>
           </div>
