@@ -32,8 +32,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-height: 56px;
 }
-.icon{
-    cursor: pointer;
+.icon {
+  cursor: pointer;
 }
 .header__title {
   font-family: "Roboto";
@@ -43,74 +43,57 @@ body {
   line-height: 28px;
   color: var(--text-name);
 }
-.main{
-    padding: 12px;
+.main {
+  padding: 12px;
 }
-.input{
-    width: -webkit-fill-available;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    background: var(--main-color-block);
-    border: 1px solid var(--header-color);
-    box-shadow: 0px 4px 4px var(--header-shadow);
-    border-radius: 12px; 
+.form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
-.form-item{
-    position: relative;
+.input {
+  width: -webkit-fill-available;
+  top: 0px;
+  left: 0px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: var(--main-color-block);
+  border: 1px solid var(--header-color);
+  box-shadow: 0px 4px 4px var(--header-shadow);
+  border-radius: 12px;
 }
-.form-name{
-    position: absolute;
-    top: 12px;
-    left: 16px;
-    margin-top:16px;
+.form-item {
+  position: relative;
+}
+.form-name {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  margin-top: 16px;
 }
 .form-item .input:focus + .form-name,
-.form-item .input:not(:placeholder-shown) + .form-name{
-    transform: translate(0px,-40px) ;
-    transition: 0.2s;
+.form-item .input:not(:placeholder-shown) + .form-name {
+  transform: translate(0px, -40px);
+  transition: 0.2s;
 }
-.form-two{
-   top:112px;
+.input-three {
+  width: -webkit-fill-available;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: var(--main-color-block);
+  border: 1px solid var(--header-color);
+  box-shadow: 0px 4px 4px var(--header-shadow);
+  border-radius: 12px;
 }
+
 .select {
-    background: url(/cat3/img/arrow-drop-down.webp) no-repeat right 14px top 12px;
-    text-align: left;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-.form-three{
-    top:200px;
-}
-.form-three{
-    position: relative;
-}
-.input-three{
-    width: -webkit-fill-available;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    background: var(--main-color-block);
-    border: 1px solid var(--header-color);
-    box-shadow: 0px 4px 4px var(--header-shadow);
-    border-radius: 12px;
-}
-.name-three{
-    position: absolute;
-    top:12px;
-    left:16px;
-    margin-top: 16px;
-}
-.input-three:focus + .name-three{
-    transform: translate(0px,-40px) ;
-    transition: 0.2s;
+  background: url(/cat3/img/arrow-drop-down.webp) no-repeat right 14px top 12px;
+  text-align: left;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

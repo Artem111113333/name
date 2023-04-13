@@ -33,7 +33,7 @@
         <h1 class="header__title">Create</h1>
       </header>
       <main class="main">
-        <form>
+        <form class="form">
           <div class="form-item">
             <input
               class="input"
@@ -44,19 +44,11 @@
             />
             <label class="form-name" for="name"> Name </label>
           </div>
-          <div class="form-item form-two">
-            <select
-              class="input select"
-              value=""
-              name="select"
-              id="select"
-              palcholder=" "
-            >
-              <option>Species</option>
-            </select>
-            <label class="form-name" for="select">Species</label>
-          </div>
+          <select class="input-three select" value="">
+            <option>Species</option>
+          </select>
           <div class="form-three">
+            <label class="name-three" for="date">Birthday</label>
             <input
               class="input-three"
               type="date"
@@ -64,7 +56,6 @@
               id="date"
               placeholder=" "
             />
-            <label class="name-three" for="date">Birthday</label>
           </div>
         </form>
       </main>
