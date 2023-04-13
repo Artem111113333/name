@@ -4,6 +4,7 @@
   --header-shadow: #c4c4c4;
   --text-name: #332317;
   --text: #000;
+  --cat-one: #0C5497;
   --cat-two: #490c97;
   --cat-three: #970c0c;
 }
@@ -87,8 +88,8 @@ main {
   width: 60px;
   height: 60px;
 }
-.left__burger-cat_red{
-  color:var(--cat-two);
+.left__burger-cat_blue{
+--cat-color:var(--cat-one);
 }
 .left__cat {
   background: var(--header-shadow);
@@ -115,6 +116,12 @@ main {
   font-size: 12px;
   line-height: 14px;
   color: var(--text);
+}
+.left__burger-cat_purple{
+  --cat-color:var(--cat-two);
+}
+.left__burger-cat_red{
+  --cat-color:var(--cat-three);
 }
 .section-second {
   margin-top: 16px;
