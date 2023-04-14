@@ -21,14 +21,14 @@ body {
   max-width: 768px;
   margin: 0 auto;
   display: flex;
-  /* flex-direction: column; контейнер */
+  flex-direction: column;
   justify-content: space-between;
 }
 .header {
   position: sticky;
   top: 0;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   padding: 14px 12px 14px 12px;
   background-color: var(--header-color);
@@ -37,12 +37,13 @@ body {
 .header__left {
   display: flex;
   column-gap: 12px;
-  align-items: center;
+  align-items: end;
 }
 .pointer {
   cursor: pointer;
 }
 .header__title {
+  margin: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -53,25 +54,31 @@ body {
 main {
   padding: 12px;
 }
+.main-table {
+  margin-top: 13px;
+}
 .line-information {
   display: grid;
   grid-template-columns: min-content min-content;
   row-gap: 10px;
 }
-.key {
+.line-information__key {
   font-size: 20px;
   line-height: 24px;
 }
-.znch {
+.line-information__value {
+  display: flex;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 16px;
 }
 .footer {
   border-top: 1px solid var(--header-color);
   position: sticky;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 35px;
   background-color: var(--main-color-block);
 }
 .footer__icon {
@@ -83,4 +90,7 @@ main {
 .footer__figcaption {
   font-size: 12px;
   line-height: 14px;
+}
+.footer__figcaption._grey {
+  color: var(--header-shadow);
 }
