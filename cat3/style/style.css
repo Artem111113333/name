@@ -36,6 +36,7 @@ body {
   cursor: pointer;
 }
 .header__title {
+  margin: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -46,49 +47,40 @@ body {
 .main {
   padding: 12px;
 }
-.form{
+.form {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 28px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .input {
-  width: -webkit-fill-available;
-  top: 0px;
-  left: 0px;
-  margin-top: 16px;
+  margin-top: 12px;
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
-  padding: 12px;
+  padding: 14px 16px;
   background: var(--main-color-block);
   border: 1px solid var(--header-color);
   box-shadow: 0px 4px 4px var(--header-shadow);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 .form-item {
   position: relative;
+  display: flex;
 }
 .form-name {
   position: absolute;
-  top: 12px;
+  top: 9px;
   left: 16px;
   margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .form-item .input:focus + .form-name,
 .form-item .input:not(:placeholder-shown) + .form-name {
   transform: translate(0px, -40px);
   transition: 0.2s;
-}
-.input-three {
-  /* Cтиль css */
-  width: -webkit-fill-available;
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  background: var(--main-color-block);
-  border: 1px solid var(--header-color);
-  box-shadow: 0px 4px 4px var(--header-shadow);
-  border-radius: 12px;
 }
 
 .select {
@@ -97,4 +89,12 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 11px 16px;
+}
+.form-date {
+  position: absolute;
+  right: 14px;
+  top: 22px;
 }
