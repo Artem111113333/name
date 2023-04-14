@@ -79,3 +79,6 @@ main {
   display: flex;
   align-items: center;
 }
+.delite-icon{
+  cursor: pointer;
+}
