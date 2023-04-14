@@ -20,9 +20,9 @@ body {
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ min-height: 100%;
+ display: flex;
+ flex-direction: column;
 }
 .header {
   position: sticky;
@@ -51,7 +51,8 @@ body {
   line-height: 28px;
   color: var(--text-name);
 }
-main {
+.main {
+  flex: 1 1 auto;
   padding: 12px;
 }
 .main-table {
