@@ -4,7 +4,7 @@
   --header-shadow: #c4c4c4;
   --text-name: #332317;
   --text: #000;
-  --cat-one: #0C5497;
+  --cat-one: #0c5497;
   --cat-two: #490c97;
   --cat-three: #970c0c;
 }
@@ -44,6 +44,7 @@ body {
   cursor: pointer;
 }
 .header__title {
+  margin: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -56,10 +57,13 @@ body {
 }
 main {
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 11px;
 }
 /* псевдокласс для марджина */
 .section {
-  margin-top: 16px;
   display: flex;
   justify-content: space-between;
   background: var(--main-color-block);
@@ -69,27 +73,24 @@ main {
   box-shadow: 0px 4px 4px var(--header-shadow);
   border-radius: 12px;
 }
-.section-first {
-  margin-top: 12px;
-}
 .section:hover {
   background-image: url(../img/icon.webp);
   background-position: 98% 10%;
   background-repeat: no-repeat;
   background-size: 16.5px 17.25px;
 }
-.left {
+.section__left {
   display: flex;
   justify-content: space-between;
   column-gap: 24px;
   padding: 12px;
 }
-.burger-cat{
+.cat-icon {
   width: 60px;
   height: 60px;
 }
-.left__burger-cat_blue{
---cat-color:var(--cat-one);
+.left__cat-icon_blue {
+  --cat-color: var(--cat-one);
 }
 .left__cat {
   background: var(--header-shadow);
@@ -97,12 +98,11 @@ main {
   border: 1px solid var(--header-color);
   border-radius: 24px;
 }
-.card__block {
+.left-card__block {
   display: flex;
-  align-items: center;
-  column-gap: 6px;
+  align-items: end;
 }
-.card__weight {
+.left-card__weight {
   display: flex;
   align-items: center;
   margin-top: 4px;
@@ -110,24 +110,19 @@ main {
   line-height: 24px;
   color: var(--text);
 }
-.section-first__date {
+.section__date {
   display: flex;
   align-items: end;
-  margin-right: 12px;
-  margin-bottom: 12px;
   font-size: 12px;
   line-height: 14px;
   color: var(--text);
 }
-.left__burger-cat_purple{
-  --cat-color:var(--cat-two);
+.cat-icon._purple {
+  --cat-color: var(--cat-two);
 }
-.left__burger-cat_red{
-  --cat-color:var(--cat-three);
+.cat-icon._red {
+  --cat-color: var(--cat-three);
 }
-.section-second {
-  margin-top: 16px;
-}
-.section-third {
-  margin-top: 16px;
+.cat-icon._blue {
+  --cat-color: var(--cat-one);
 }

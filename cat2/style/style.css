@@ -6,7 +6,7 @@
   --text: #000;
 }
 body {
-  margin:0px;
+  margin: 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@ body {
   max-width: 768px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; контейнер */
   justify-content: space-between;
 }
 .header {
@@ -39,10 +39,10 @@ body {
   column-gap: 12px;
   align-items: center;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
-.header__title{
+.header__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -58,13 +58,13 @@ main {
   grid-template-columns: min-content min-content;
   row-gap: 10px;
 }
-.key{
+.key {
   font-size: 20px;
-line-height: 24px;
+  line-height: 24px;
 }
-.znch{
+.znch {
   font-size: 16px;
-line-height: 24px;
+  line-height: 24px;
 }
 .footer {
   border-top: 1px solid var(--header-color);
@@ -74,13 +74,13 @@ line-height: 24px;
   justify-content: space-around;
   background-color: var(--main-color-block);
 }
-.footer__icon{
+.footer__icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer__figcaption{
+.footer__figcaption {
   font-size: 12px;
-line-height: 14px;
+  line-height: 14px;
 }
