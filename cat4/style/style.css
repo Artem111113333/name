@@ -48,6 +48,7 @@ body {
   cursor: pointer;
 }
 .header__title {
+  margin: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -65,12 +66,16 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 12px 0px;
   font-size: 16px;
   line-height: 24px;
   border-bottom: 1px solid var(--header-color);
 }
-.card__block{
-    display: flex;
-    align-items: center;
+.rename__left {
+  display: flex;
+  column-gap: 74px;
+}
+.card__block {
+  display: flex;
+  align-items: center;
 }
