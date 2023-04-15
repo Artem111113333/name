@@ -74,6 +74,7 @@ body {
   top: 9px;
   left: 16px;
   margin-top: 16px;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   background-color: var(--main-color-block);
@@ -95,6 +96,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   padding: 11px 16px;
